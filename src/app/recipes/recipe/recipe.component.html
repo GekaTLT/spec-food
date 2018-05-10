@@ -1,0 +1,14 @@
+<div class="recipe" (mouseover)="moveMouse = true" (mouseout)="moveMouse = false" (click)="onClick()" [ngStyle]="styleOpen">
+  <div *ngIf="!styleOpen" class="recipe--decor"></div>
+  <h2 *ngIf="!moveMouse && !styleOpen" class="recipe__title">{{recipe.name}}</h2>
+  <div *ngIf="!moveMouse && !styleOpen" class="recipe__img">
+    <img [src]="'../../../assets/db-img/' + imgUrl[0]" [alt]="recipe.name">
+  </div>
+  <div *ngIf="moveMouse && !styleOpen" class="recipe__ingredients">
+    <p class="recipe__ingredients__title">ингредиенты</p>
+    <p *ngFor="let item of recipe.ingredients">{{item}}</p>
+  </div>
+  <!---------------open------------------>
+  <div sf-recipe-is-open [recipe]="recipe" [imgUrl]="imgUrl" *ngIf="styleOpen"></div>
+</div>
+

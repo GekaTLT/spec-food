@@ -1,0 +1,4 @@
+<section class="recipes bg-main">
+  <div class="recipes__title">{{activeCategory}}</div>
+  <div sf-recipe *ngFor="let item of recipes" [recipe]="item"></div>
+</section>

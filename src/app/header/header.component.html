@@ -1,0 +1,15 @@
+<a class="header__logo" routerLink='/'>
+  <div class="header__logo__img"></div><span>пец</span> еда
+</a>
+<nav class="header__nav--wrapper">
+  <div class="header__nav">
+    <a sf-nav-link routerLink="/vegan" class="header__nav__link" routerLinkActive="header__nav__link--active" [key]="'vegan'" [text]="'Вегетарианская кухня'" (click)="setStatusSubMenu()"></a>
+  </div>
+  <div sf-sub-menu *ngIf="statusSubMenu" class="header__submenu" (closedSubMenu)="setStatusSubMenu()"></div>
+</nav>
+<div *ngIf="!statusSubMenu" class="header__title">
+  <p>Добро пожаловать</p>
+  <a class="header__logo header__logo--mini" routerLink='/'>
+    <div class="header__logo__img"></div><span>пец</span> еда
+  </a>
+</div>

@@ -1,0 +1,22 @@
+<h2 class="recipe-open__title">{{recipe.name}}</h2>
+
+<div class="recipe-open__wrapper">
+  <div class="recipe-open__img">
+    <img [src]="'../../../../assets/db-img/' + imgUrl[0]" [alt]="recipe.name">
+  </div>
+  <div class="recipe-open__ingredients">
+    <p class="recipe-open__ingredients__title">ингредиенты</p>
+    <p *ngFor="let item of recipe.ingredients" class="recipe-open__ingredients__item">{{item}}</p>
+  </div>
+</div>
+
+<p class="recipe-open__description">{{recipe.description}}</p>
+<hr>
+<h3 *ngIf="recipe.cooking[0]" class="recipe-open__cooking">способ приготовления</h3>
+<div class="recipe-open__cooking__step" *ngFor="let item of recipe.cooking; index as i;" >
+  <p class="recipe-open__cooking__step__number">Шаг {{i+1}}.</p>
+  <div *ngIf="imgUrl[i + 1]" class="recipe-open____cooking__step__img">
+    <img [src]="'../../../../assets/db-img/' + imgUrl[i + 1]" [alt]="recipe.name">
+  </div>
+  <p class="recipe-open____cooking__step__text">{{item}}</p>
+</div>

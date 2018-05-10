@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+.preload{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  background-color: #fff;
+}
+
+.preload__img{
+  width: 320px;
+  height: 240px;
+  margin: 20vh auto;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bg-main{
+  background-image: url(assets/img/mainBG.jpg);
+  background-size: cover;
+}

@@ -1,0 +1,6 @@
+<div class="header__submenu__link--flex">
+  <a [routerLink]="'/' + this.collection['key'] + '/' + text" *ngFor="let text of category" class="header__submenu__link" routerLinkActive="header__submenu__link--active" (click)="onClick()">
+    {{text}}
+  </a>
+</div>
+

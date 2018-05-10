@@ -1,0 +1,98 @@
+.recipe-open__title{
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 20px 0;
+  font-family: "Roboto Condensed", serif ;
+  color: #fff;
+  background-color: #73a311;
+  position: sticky;
+  top: 0;
+}
+.recipe-open__wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px auto;
+}
+.recipe-open__img{
+  max-width: 300px;
+  display: block;
+  img{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.recipe-open__ingredients{
+  max-width: 300px;
+  display: block;
+  text-align: left;
+}
+.recipe-open__ingredients__title{
+  font-family: "Roboto Condensed", serif ;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.recipe-open__ingredients__item {
+  display: block;
+  padding-left: 15px;
+  position: relative;
+  &:before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #73a311;
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+}
+.recipe-open__description{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+hr{
+  width: 70%;
+  background-color: #73a311;
+  border: none;
+  height: 1px;
+}
+
+.recipe-open__cooking{
+  font-family: "Roboto Condensed", serif ;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+.recipe-open__cooking__step{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.recipe-open__cooking__step__number{
+  font-weight: bold;
+  width: 100%;
+}
+.recipe-open____cooking__step__img {
+  max-width: 300px;
+  img {
+    width: 100%;
+  }
+}
+.recipe-open____cooking__step__text{
+  max-width: 400px;
+  text-align: left;
+}

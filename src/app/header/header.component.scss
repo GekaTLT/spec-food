@@ -1,0 +1,102 @@
+.header__logo{
+  width: 100%;
+  height: 50px;
+  font-size: 50px;
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+  color: #666;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  background-color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  &__img{
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    background: url("../../assets/img/logoC.png") no-repeat;
+    background-size: cover;
+    margin-right: -10px;
+  }
+  span{
+    font-weight: 100;
+    color: #00aa44;
+    text-transform: none;
+    font-style: italic;
+    font-family: 'Kobzar', serif;
+  }
+  &--mini{
+    background: none;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .95);
+  }
+}
+.header__nav--wrapper{
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  position: static;
+}
+.header__nav{
+  background-color: #73a311;
+  width: 100%;
+  text-align: center;
+  &__link{
+    padding: 20px 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    position: relative;
+    transition: all 300ms;
+  }
+  &__link:hover{
+    color: #666;
+  }
+  &__link:after{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 18px;
+  }
+  &__link:last-child:after{
+    display: none;
+  }
+  &__link--active{
+    color: #666;
+  }
+}
+.header__submenu{
+  width: 100%;
+}
+
+.header__title{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,.4);
+  margin: 50px auto;
+  width: 100%;
+  min-height: 250px;
+  p{
+    font-family: 'Kobzar', serif;
+    color: #ffffff;
+    font-size: 3em;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .95);
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px){
+
+}
