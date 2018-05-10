@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic');
+
+/* шрифт мелом по доске
+  @font-face {
+  font-family: "LC Chalk";
+  src: url("assets/fonts/3892.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}*/
+
+@font-face {
+  font-family: 'Kobzar';
+  src: url('assets/fonts/kobzarks_v1-020.woff2') format('woff2'),
+  url('assets/fonts/kobzarks_v1-020.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-size: 16px;
+}
